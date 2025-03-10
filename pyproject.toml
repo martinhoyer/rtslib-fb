@@ -31,6 +31,9 @@ paths = ["COPYING"]
 [project.urls]
 Homepage = "http://github.com/open-iscsi/rtslib-fb"
 
+[project.scripts]
+targetctl = "rtslib.targetctl:main"
+
 [tool.hatch.version]
 source = "vcs"
 
