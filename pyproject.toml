@@ -93,4 +93,4 @@ ignore = [
 ]
 [tool.ruff.lint.per-file-ignores]
 # Magic value used in comparison
-"scripts/targetctl" = ["PLR2004"]
+"rtslib/targetctl.py" = ["PLR2004"]
