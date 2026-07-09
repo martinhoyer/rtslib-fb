@@ -37,7 +37,7 @@ source = "vcs"
 [tool.hatch.build.targets.wheel]
 packages = [
     "rtslib",
-    "rtslib_fb"
+    "rtslib_fb.py"
 ]
 
 [tool.hatch.envs.default]
