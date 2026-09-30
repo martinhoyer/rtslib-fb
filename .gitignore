@@ -22,3 +22,6 @@ venv/
 *egg-info/
 .mypy_cache/
 .ruff_cache/
+
+# Fetched from Fedora dist-git by Packit
+/python-rtslib.spec
