@@ -3,7 +3,7 @@ build-backend = "hatchling.build"
 requires = ["hatchling", "hatch-vcs"]
 
 [project]
-name = "rtslib-fb"
+name = "rtslib"
 description = "API for Linux kernel SCSI target (aka LIO)"
 readme = "README.md"
 license = "Apache-2.0"
@@ -26,7 +26,7 @@ dependencies = [
 dynamic = ["version"]
 
 [project.urls]
-Homepage = "http://github.com/open-iscsi/rtslib-fb"
+Homepage = "https://github.com/open-iscsi/rtslib-fb"
 
 [project.scripts]
 targetctl = "rtslib.targetctl:main"

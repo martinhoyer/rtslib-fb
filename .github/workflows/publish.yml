@@ -20,7 +20,7 @@ jobs:
 
     environment:
       name: pypi
-      url: https://pypi.org/p/rtslib-fb
+      url: https://pypi.org/p/rtslib
 
     steps:
       - uses: actions/checkout@v4

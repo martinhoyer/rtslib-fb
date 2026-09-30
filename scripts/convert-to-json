@@ -2,7 +2,7 @@
 '''
 convert-to-json
 
-This file is part of RTSLib-fb.
+This file is part of RTSLib.
 Copyright (c) 2013-2016 by Red Hat, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may
