@@ -11,7 +11,7 @@ Release:        %autorelease
 Summary:        API for Linux kernel LIO SCSI target
 License:        Apache-2.0
 URL:            https://github.com/open-iscsi/rtslib-fb
-Source:         %{pypi_source rtslib_fb}
+Source:         %{pypi_source rtslib}
 
 BuildArch:      noarch
 BuildRequires:  python3-devel
@@ -25,6 +25,10 @@ service and targetctl tool for restoring configuration.}
 
 %package -n python3-rtslib
 Summary:        %{summary}
+# Published on PyPI as rtslib-fb until version 2.2.4. Keep providing the
+# old name for packages that still depend on it.
+Provides:       python3dist(rtslib-fb) = %{version}
+Provides:       python%{python3_version}dist(rtslib-fb) = %{version}
 
 %description -n python3-rtslib %_description
 
@@ -38,7 +42,7 @@ Systemd service to restore the LIO kernel target settings
 on system restart.
 
 %prep
-%autosetup -p1 -n rtslib_fb-%{version}
+%autosetup -p1 -n rtslib-%{version}
 
 %generate_buildrequires
 %pyproject_buildrequires
